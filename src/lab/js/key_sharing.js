@@ -21,6 +21,8 @@ function powAndMod(G, a, p) {
 
 function nextPrime() {
 	currentPrimeIndex ++;
+	if (currentPrimeIndex >= 5)
+		alert("Example range is only 5 inputs");
 	currentPrime = primes[currentPrimeIndex];
 	document.getElementById("prime").value = currentPrime;
 	currentGeneratorIndex = generators[currentPrimeIndex].length;
